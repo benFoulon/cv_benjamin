@@ -1,0 +1,42 @@
+.header__box {
+    padding: 3%;
+    background-image: url("/img_portofolio/b_w_pic.jpg");
+    background-size: cover;
+}
+.header__title{
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.9rem;
+}
+.header__poste{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+.header__photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url("/img_portofolio/profilpic.jpg");
+    background-size: cover;
+}
+
+@media screen and (min-width: 900px){
+    .header__box{
+        padding: 5% 13% 15% 13%;
+        background-attachment: fixed;
+    }
+    .header__title{
+        font-size: 2.9rem;
+    }
+    .header__poste{
+        font-size: 2.3rem;
+    }
+    .header__photo{
+        width: 200px;
+        height: 200px;
+    }
+}

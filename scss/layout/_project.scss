@@ -1,0 +1,86 @@
+.project__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.project__caroussel{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+}
+.project__card{
+    width: 40%;
+    margin: 4%;
+    padding: 10%;
+    border: 1px solid white;
+    font-size: 1.5rem;
+
+    &--showtrack{
+        background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0)), url("/img_portofolio/logo_showtrack.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover{
+            background-image: linear-gradient(rgba(0,0,0,0.5), $primary-color), url("/img_portofolio/logo_showtrack.png");
+            transform: scale(1.1);
+            transition-duration: 1s;
+            box-shadow: 2px 2px 2px black;
+        }
+    }
+    &--blog{
+        background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0)), url("/img_portofolio/blogpage.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:hover{
+            background-image: linear-gradient(rgba(0,0,0,0.5), $primary-color), url("/img_portofolio/blogpage.png");
+            transform: scale(1.1);
+            transition-duration: 1s;
+            box-shadow: 2px 2px 2px black;
+        }
+    }
+    &--wordpresse{  
+        background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0)), url("/img_portofolio/wordpresse.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:hover{
+            background-image: linear-gradient(rgba(0,0,0,0.5), $primary-color), url("/img_portofolio/wordpresse.png");
+            transform: scale(1.1);
+            transition-duration: 1s;
+            box-shadow: 2px 2px 2px black;
+        }
+    }
+}
+
+.project__card--link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    padding: 2%;
+
+    &:hover{
+        text-decoration: none;
+        transition-duration: 0.5s;
+        font-size: 1rem;
+        color: white;
+    }
+}
+@media screen and (min-width: 900px){
+    .project__title{
+        font-size: 2.3rem;
+    }
+    .project__card{
+        padding: 8%;
+    }
+
+    .project__card--link{
+        font-size: 1.2rem;
+
+        &:hover{
+            font-size: 1.2rem
+        }
+    }
+}

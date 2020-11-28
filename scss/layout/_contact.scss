@@ -1,0 +1,115 @@
+.contact__title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contact__infos{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;;
+    &--logo{
+        display: ruby;
+    }
+    &--link{
+        text-decoration: none;
+        color: $secondary-color;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}
+hr{
+    background-color: $secondary-color;
+}
+
+.contact__form{
+    display: flex;
+    justify-content: center;
+
+    &--content{
+        display: flex;
+        flex-direction: column;
+    }
+    &--button{
+        margin: 15px;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 1px 1px 2px white;
+        font-weight: 700;
+
+        &:active{
+            scale: (0.9);
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .contact__box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact__title{
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+    }
+    .contact__form{
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+
+    .contact__infos{
+        padding: 3%;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .contact__desktop{
+        align-self: start;
+        font-size: 1.2rem;
+    }
+    input{
+        width: 18rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .contact__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__title{
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+    }
+    .contact__form{
+        font-size: 1.1rem;
+        margin-left: 5%;
+    }
+
+    .contact__infos{
+        padding: 3%;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .contact__desktop{
+        align-self: start;
+        font-size: 1.4rem;
+    }
+    input{
+        width: 30rem;
+    }
+    textarea{
+        width: 30rem;
+    }
+}

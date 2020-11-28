@@ -1,0 +1,28 @@
+/** Required Bootstrap **/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+
+
+/** Optional Bootstrap Grid **/
+@import "node_modules/bootstrap/scss/grid";
+
+/** Optional Bootstrap Navbar **/
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/navbar";
+
+
+/** Base **/
+@import 'base';
+
+/** Layouts **/
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/body';
+@import 'layout/about';
+@import 'layout/experience';
+@import 'layout/project';
+@import 'layout/skill';
+@import 'layout/contact';

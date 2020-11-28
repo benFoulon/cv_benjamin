@@ -1,0 +1,22 @@
+.containeur{
+    font-family: 'Playfair Display', serif;
+}
+
+.containeur--dark{
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 5%;
+}
+.containeur--white{
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 5%;
+}
+.navbar{
+    z-index: 2;
+    box-shadow: 1px 5px 5px #000000;
+}
+.nav-link{
+    color: $secondary-color !important; 
+}
+
