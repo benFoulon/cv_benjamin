@@ -63,11 +63,16 @@
 
     &:hover{
         text-decoration: none;
-        transition-duration: 0.5s;
-        font-size: 1rem;
         color: white;
     }
 }
+
+@media screen and (min-width: 400px){
+    .quote__language{
+        margin: 15px;
+    }
+}
+
 @media screen and (min-width: 900px){
     .project__title{
         font-size: 2.3rem;
